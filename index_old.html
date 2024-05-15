@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Status Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="/" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone">Enter Phone Number Without 0 If You Are Using A Machine:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="machine_status">Type Of Notification:</label>
+        <select id="machine_status" name="machine_status">
+            <option value="using">Report which machine are you using</option>
+            <option value="busy">Report which machine is busy</option>
+            <option value="done">Report which machine is done</option>
+            <option value="broken">Report which machine is broken</option>
+            <option value="fixed">Report which machine is fixed</option>
+        </select><br>
+
+        <label for="machine_type">Which Machine:</label>
+        <select id="machine_type" name="machine_type">
+            <option value="washer1 on level1">Washer 1 on Level 1</option>
+            <option value="washer2 on level1">Washer 2 on Level 1</option>
+            <option value="dryer1 on level1">Dryer 1 on Level 1</option>
+            <option value="dryer2 on level1">Dryer 2 on Level 1</option>
+            <option value="washer1 on level3">Washer 1 on Level 3</option>
+            <option value="washer2 on level3">Washer 2 on Level 3</option>
+            <option value="dryer1 on level3">Dryer 1 on Level 3</option>
+            <option value="dryer2 on level3">Dryer 2 on Level 3</option>
+        </select><br>
+
+        <button type="submit">Send A Message</button>
+    </form>
+</body>
+</html>
